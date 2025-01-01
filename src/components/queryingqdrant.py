@@ -35,7 +35,7 @@ class Chatbot:
     def generate_response(self, query: str, documents: list):
         context = "\n".join([doc.payload.get("content", "") for doc in documents])
         messages = [
-            {"role": "system", "content": "You are a helpful assistant that provides short, concise answers based own your knowledge . Focus only on information present in the context and avoid speculation."},
+            {"role": "system", "content": "You are a helpful assistant that provides short, concise answers based own your knowledge and answer in humanize way and dont answer like on the basis of my knowledge or context. Focus only on information present in the context and avoid speculation."},
             {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}\n\nProvide a brief, focused answer based solely on the context provided."}
         ]
         

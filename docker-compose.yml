@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  trinitychatbot:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    container_name: trinitychatbot
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    networks:
+      - trinity-network
+
+networks:
+  trinity-network:
+    driver: bridge
