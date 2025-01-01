@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/TrinityBot.egg-info/PKG-INFO
+src/TrinityBot.egg-info/SOURCES.txt
+src/TrinityBot.egg-info/dependency_links.txt
+src/TrinityBot.egg-info/top_level.txt

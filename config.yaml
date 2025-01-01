@@ -1,0 +1,4 @@
+scrape_config:
+  urls_to_scrape:
+    trakx: "https://token.trakx.io/"
+    bidnow: "https://www.bidnow.my/"

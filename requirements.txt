@@ -1,0 +1,14 @@
+qdrant-client
+fastapi
+uvicorn
+typing-extensions
+python-dotenv
+pydantic
+langchain
+bs4
+selenium
+pdfplumber
+openai
+PyPDF2
+python-multipart
+-e .
