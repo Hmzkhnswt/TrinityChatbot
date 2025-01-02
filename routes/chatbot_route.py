@@ -1,6 +1,6 @@
 import os
 from fastapi import APIRouter, HTTPException
-from src.components.queryingqdrant import Chatbot
+from TrinityBot.components.queryingqdrant import Chatbot
 from dotenv import load_dotenv
 load_dotenv()
 

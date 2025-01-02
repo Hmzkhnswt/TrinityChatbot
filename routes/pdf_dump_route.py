@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, Form, APIRouter
 from fastapi.responses import JSONResponse
-from src.components.qdrantdumping import QdrantDumper
+from TrinityBot.components.qdrantdumping import QdrantDumper
 import os
 
 router = APIRouter()

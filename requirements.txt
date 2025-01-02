@@ -6,7 +6,7 @@ python-dotenv
 pydantic
 langchain
 bs4
-selenium
+selenium>=4.0.0
 pdfplumber
 openai
 PyPDF2

@@ -1,7 +1,7 @@
 import subprocess
 import sys
 import os
-from utils.logging import logger
+from TrinityBot.utils.logging import logger
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -37,8 +37,8 @@ def main():
     logger.info("<<<< Started Pipeline Execution ... >>>>")
 
     stage_scripts = [
-        "src/pipeline/stage01_DataScraping.py",
-        "src/pipeline/stage02_QdrantDumping.py"
+        "src/TrinityBot/pipeline/stage01_DataScraping.py",
+        "src/TrinityBot/pipeline/stage02_QdrantDumping.py"
     ]
 
     for script in stage_scripts:

@@ -10,11 +10,12 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+      - /app/node_modules
     environment:
       - PYTHONUNBUFFERED=1
-    restart: unless-stopped
     networks:
       - trinity-network
+    init: true
 
 networks:
   trinity-network:

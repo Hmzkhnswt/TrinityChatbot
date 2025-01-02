@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 from urllib.parse import urlparse
 from dotenv import load_dotenv
-from src.components.datascraping import SSRScraper
+from TrinityBot.components.datascraping import SSRScraper
 
 load_dotenv()
 

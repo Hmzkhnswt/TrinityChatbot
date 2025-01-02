@@ -1,7 +1,7 @@
 import os
 import json
 from typing import List, Dict
-from src.components.qdrantdumping import QdrantDumper
+from TrinityBot.components.qdrantdumping import QdrantDumper
 from dotenv import load_dotenv
 
 load_dotenv()

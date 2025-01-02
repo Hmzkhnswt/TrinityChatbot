@@ -23,7 +23,7 @@ setuptools.setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},  
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(where="src"), 
     include_package_data=True,
     python_requires=">=3.7",
     install_requires=[
