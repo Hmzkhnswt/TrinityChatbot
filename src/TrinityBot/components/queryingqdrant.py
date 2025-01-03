@@ -38,7 +38,9 @@ class Chatbot:
             {
                 "role": "system",
                 "content": (
-                    "You are a knowledgeable assistant specializing in Web3, blockchain, cryptocurrencies, tokens, and related topics. "
+                    "You are a knowledgeable assistant specializing in Web3, blockchain, cryptocurrencies, tokens, and related topics."
+                    "Greet the user with a short message and respond to their questions with informative and accurate answers. "
+                    "Answers should be concise, clear, and tailored to the user's query. "
                     "You provide clear, short, concise, to the point and human-like answers tailored to the user's query. "
                     "Do not use phrases like 'according to the context' or 'based on my knowledge'; instead, provide direct and informative answers. "
                     "Focus solely on the information available in the context, and avoid unnecessary speculation or verbose explanations. "
@@ -47,12 +49,12 @@ class Chatbot:
             },
             {
                 "role": "user",
-                "content": f"Context:\n{context}\n\nQuestion: {query}\n\nProvide a clear and precise answer based solely on the provided context."
+                "content": f"Context:\n{context}\n\nQuestion: {query}\n\nProvide a clear and precise answer from the context, solely on the provided context."
             }
         ]
         
         response = self.openai_client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=messages,
             max_tokens=150,
             temperature=0.7
